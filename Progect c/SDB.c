@@ -45,7 +45,6 @@ bool SDB_AddEntry()
         {
             if(G1[i].Student_ID == 0) // To Know Where Add new student
             {
-                copyI = i;
                 break;
             }
         }
@@ -65,42 +64,49 @@ bool SDB_AddEntry()
         printf("Enter Student Year\n");
         if(scanf("%d",&G1[copyI].Student_year) !=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course1_ID : \n");
         if(scanf("%d",&G1[copyI].Course1_ID)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course1_Grade : \n");
         if(scanf("%d",&G1[copyI].Course1_grade)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course2_ID : \n");
         if(scanf("%d",&G1[copyI].Course2_ID)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course2_Grade : \n");
         if(scanf("%d",&G1[copyI].Course2_grade)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course3_ID : \n");
         if(scanf("%d",&G1[copyI].Course3_ID)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
         printf("Enter Course3_Grade : \n");
         if(scanf("%d",&G1[copyI].Course3_grade)!=1)// To Avoid Character Input
         {
+            G1[i].Student_ID = 0;
             fflush(stdin);
             return false;
         }
